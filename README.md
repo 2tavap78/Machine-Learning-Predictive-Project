@@ -31,12 +31,12 @@ The dataset exhibits significant **class imbalance** (~25% donors, ~75% non-dono
 
 ```
 .
-├── Donors_Predictive_Final.ipynb   # Main notebook
-├── donors_train_target.csv         # Training labels
-├── test.csv                        # Test set (no labels)
-├── sample_submission.csv           # Submission format reference
-└── submission_lr.csv               # Final Kaggle submission
-```
+├── data/
+│   ├── donors_train_target.csv
+│   ├── sample_submission.csv
+│   └── test.csv
+├── Donors_Predictive_Final.ipynb
+└── README.md
 
 ---
 
