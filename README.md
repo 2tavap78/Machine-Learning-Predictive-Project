@@ -1,5 +1,3 @@
-# Machine-Learning-Predictive-Project
-
 # Reach for Change — Predicting Donor Response to Optimize Outreach
 
 A binary classification project to predict whether a potential donor will respond positively to a fundraising campaign, enabling a nonprofit federation to target outreach more precisely and reduce unnecessary contact.
@@ -32,11 +30,12 @@ The dataset exhibits significant **class imbalance** (~25% donors, ~75% non-dono
 ```
 .
 ├── data/
-│   ├── donors_train_target.csv
-│   ├── sample_submission.csv
-│   └── test.csv
-├── Donors_Predictive_Final.ipynb
+│   ├── donors_train_target.csv     # Training labels
+│   ├── sample_submission.csv       # Submission format reference
+│   └── test.csv                    # Test set (no labels)
+├── Donors_Predictive_Final.ipynb   # Main notebook
 └── README.md
+```
 
 ---
 
@@ -102,7 +101,7 @@ The model's tendency to produce more false positives (non-donors flagged as dono
 ## Running the Notebook
 
 1. Clone the repository
-2. Place `donors_train_target.csv` and `test.csv` in the same directory as the notebook (or adjust `lab_root` if running in Colab)
-3. Run all cells top to bottom — the final cell exports `submission_lr.csv`
+2. Ensure the `data/` folder contains `donors_train_target.csv`, `test.csv`, and `sample_submission.csv`
+3. Run all cells top to bottom — the final cell exports the submission CSV
 
-> **Note:** If using Google Colab, mount your Drive and set `lab_root` to point to your data folder before running.
+> **Note:** If using Google Colab, mount your Drive and set `lab_root` to point to the `data/` folder before running.
